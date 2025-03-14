@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  background: var(--color-base-white);
+  color: var(--color-base-black);
+}
+
+@theme {
+  --color-*: initial;
+
+  /* Base Colors */
+  --color-base-white: #ffffff;
+  --color-base-black: #000000;
+  --color-transparent: #ffffff00;
+  --color-transparent-70: #ffffff26;
+
+  /* Neutral / Gray Colors */
+  --color-gray-50: #f9faf7;
+  --color-gray-50: #f9faf7;
+  --color-gray-25: #fcfdfc;
+  --color-gray-75: #f0f1ee;
+  --color-gray-100: #e8e9e5;
+  --color-gray-200: #e0e2de;
+  --color-gray-300: #d8dad5;
+  --color-gray-400: #c7c9c4;
+  --color-gray-500: #cdcfca;
+  --color-gray-600: #babcb6;
+  --color-gray-700: #62645c;
+  --color-gray-800: #34362e;
+  --color-gray-900: #1e2019;
+  --color-gray-950: #121311;
+
+  /* Brand Colors (Primary Theme) */
+  --color-brand-25: #fafdff;
+  --color-brand-50: #e1e9f0;
+  --color-brand-75: #c8d5e0;
+  --color-brand-100: #afc1d1;
+  --color-brand-200: #96adc2;
+  --color-brand-300: #6484a3;
+  --color-brand-400: #325c85;
+  --color-brand-500: #003466; /* Main Brand Color */
+  --color-brand-600: #002a52;
+  --color-brand-700: #001f3d;
+  --color-brand-800: #001529;
+  --color-brand-900: #00101f;
+  --color-brand-950: #000a14;
+
+  /* Secondary Colors (Accent) */
+  --color-secondary-25: #fffdfa;
+  --color-secondary-50: #fff5e2;
+  --color-secondary-75: #ffeeca;
+  --color-secondary-100: #ffe6b2;
+  --color-secondary-200: #ffdf9a;
+  --color-secondary-300: #fecf6b;
+  --color-secondary-400: #fec03b;
+  --color-secondary-500: #feb10b; /* Main Accent Color */
+  --color-secondary-600: #d09109;
+  --color-secondary-700: #a27107;
+  --color-secondary-800: #755104;
+  --color-secondary-900: #302101;
+  --color-secondary-950: #191100;
+}
