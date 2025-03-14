@@ -4,12 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { Navigation, Autoplay } from "swiper/modules";
+import Image from "next/image";
 
 const images = [
-  "/images/carousel_one.png",
-  "/images/carousel_two.png",
-  "/images/carousel_three.png",
-  "/images/carousel_four.png",
+  "/images/image1.jpg",
+  "/images/image2.jpg",
+  "/images/image3.jpg",
+  "/images/image4.jpg",
+  "/images/image5.jpg",
+  "/images/image6.jpg",
 ];
 
 export const BackgroundCarousel = () => {
@@ -26,10 +29,14 @@ export const BackgroundCarousel = () => {
     >
       {images.map((src, index) => (
         <SwiperSlide key={index} className="w-full h-full">
-          <img
+          <Image
             src={src}
             alt={`Background ${index + 1}`}
-            className="h-full object-cover"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            priority={index === 0}
+            quality={90}
           />
         </SwiperSlide>
       ))}
