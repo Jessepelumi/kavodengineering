@@ -1,11 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export const Navbar = () => {
   return (
     <aside className="px-5 flex justify-between items-center py-3 lg:px-10">
       <div className="flex items-center gap-14">
-        <img src="/svg/KESMainLogo.svg" alt="Kavod Engineering Main Logo" />
-        <nav className="hidden lg:flex justify-between space-x-10 text-gray-700 text-[14px]">
+        <Image
+          src="/images/KESMainLogo.png"
+          alt="Kavod Engineering Main Logo"
+          width={128}
+          height={64}
+          priority
+        />
+        <nav className="hidden lg:flex justify-between space-x-7 text-gray-600 text-[14px]">
           <Link href="/">About us</Link>
           <Link href="/">Services</Link>
           <Link href="/">Contact</Link>
