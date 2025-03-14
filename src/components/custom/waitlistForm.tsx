@@ -3,17 +3,17 @@ import { useState } from "react";
 export default function WaitlistForm() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
-  const [subscribed, setSubscribed] = useState(false);
-  const [message, setMessage] = useState("");
+  // const [subscribed, setSubscribed] = useState(false);
+  // const [message, setMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setMessage("Thank you for subscribing!");
+    //setMessage("Thank you for subscribing!");
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      setMessage("Please enter a valid email address.");
+      //setMessage("Please enter a valid email address.");
       setLoading(false);
       return;
     }
@@ -29,10 +29,10 @@ export default function WaitlistForm() {
       );
 
       const data = await response.json();
-      setMessage(data.message || "Successfully Subscribed!");
+      //setMessage(data.message || "Successfully Subscribed!");
     } catch (error) {
       console.error("Error:", error);
-      setMessage("An error occurred. Please try again.");
+      //setMessage("An error occurred. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -50,20 +50,21 @@ export default function WaitlistForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        disabled={loading || subscribed}
+        disabled={loading}
       />
       <button
         type="submit"
         className="bg-base-white text-base-black text-[14px] py-3 px-6 rounded-3xl hover:bg-gray-100"
-        disabled={subscribed}
+        //disabled={subscribed}
       >
-        {loading ? (
+        {/* {loading ? (
           <div className="w-5 h-5 border-2 border-gray-600 border-t-white rounded-full animate-spin"></div>
         ) : subscribed ? (
           "Subscribed"
         ) : (
           "Subscribe"
-        )}
+        )} */}
+        "Subscribe"
       </button>
     </form>
   );
