@@ -63,4 +63,7 @@
   --color-secondary-800: #755104;
   --color-secondary-900: #302101;
   --color-secondary-950: #191100;
+
+  /* Status Colors */
+  --color-error: #7D0A0A;
 }

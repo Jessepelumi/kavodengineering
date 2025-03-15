@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <aside className="px-5 flex justify-between items-center py-3 lg:px-10">
+    <aside className="bg-base-white px-5 flex justify-between items-center py-3 lg:px-10">
       <div className="flex items-center gap-14">
         <Image
           src="/images/KESMainLogo.png"
@@ -11,6 +11,7 @@ export const Navbar = () => {
           width={128}
           height={64}
           priority
+          className="h-auto w-auto"
         />
         <nav className="hidden lg:flex justify-between space-x-7 text-gray-600 text-[14px]">
           <Link href="/">About us</Link>
