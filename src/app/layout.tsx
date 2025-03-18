@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./app.css";
-import { WaitlistBanner } from "@/components/custom/waitlistBanner";
 import { Navbar } from "@/components/custom/navbar";
 import { Footer } from "@/components/custom/footer";
+import { ContactBanner } from "@/components/custom/contactBanner";
 
 export const metadata: Metadata = {
   title: "Kavod Engineering",
@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased overscroll-none">
         <header className="w-full fixed top-0 right-0 left-0 z-50">
-          <WaitlistBanner />
+          <ContactBanner />
           <Navbar />
         </header>
         {children}
