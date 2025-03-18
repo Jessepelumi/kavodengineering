@@ -10,6 +10,22 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
+  openGraph: {
+    title: "Kavod Engineering",
+    description: "Kavod Engineering Waitlist",
+    images: [
+      {
+        url: "/favicon.png",
+        width: 512,
+        height: 512,
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/favicon.png"],
+  },
 };
 
 export default function RootLayout({
