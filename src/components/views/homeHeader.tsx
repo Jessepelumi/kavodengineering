@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { BackgroundCarouselWithControls } from "./backgroundCarouselWithControls";
-import { Overlay } from "./overlay";
+import { BackgroundCarouselWithControls } from "../custom/backgroundCarouselWithControls";
+import { Overlay } from "../custom/overlay";
 import { Swiper as SwiperType } from "swiper";
-import { CarouselControls } from "./carouselControls";
-import { HomeHeaderText } from "./homeHeaderText";
+import { CarouselControls } from "../custom/carouselControls";
+import { HomeHeaderText } from "../custom/homeHeaderText";
 
 export const HomeHeader = () => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
