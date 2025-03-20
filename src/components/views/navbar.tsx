@@ -25,6 +25,14 @@ export const Navbar = () => {
           </Link>
           <nav className="hidden md:flex justify-between space-x-7 text-gray-600 font-semibold text-[14px]">
             <Link
+              href=""
+              className={`hover:text-brand-700 hover:font-semibold ${
+                pathname === "" ? "text-brand-700 font-semibold" : ""
+              }`}
+            >
+              About us
+            </Link>
+            <Link
               href="/services"
               className={`hover:text-brand-700 hover:font-semibold ${
                 pathname === "/services" ? "text-brand-700 font-semibold" : ""
@@ -97,6 +105,20 @@ export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
           </button>
         </div>
         <nav>
+          <Link
+            href=""
+            className="flex justify-between items-center border-b-[0.5px] py-5 pr-2.5"
+            onClick={closeMenu}
+          >
+            About us
+            <Image
+              src="/svg/ArrowUpRight.svg"
+              alt="Navigate to Services"
+              width={16}
+              height={16}
+            />
+          </Link>
+
           <Link
             href="/services"
             className="flex justify-between items-center border-b-[0.5px] py-5 pr-2.5"
