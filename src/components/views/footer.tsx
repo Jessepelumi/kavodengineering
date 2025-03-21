@@ -42,7 +42,7 @@ export const Footer = () => {
             <div className="flex flex-col gap-2">
               <h3 className="font-bold">Quick Links</h3>
               <nav className="flex flex-col">
-                <Link href="/" className="hover:text-gray-600">
+                <Link href="#about" className="hover:text-gray-600">
                   About us
                 </Link>
                 <Link href="/" className="hover:text-gray-600">

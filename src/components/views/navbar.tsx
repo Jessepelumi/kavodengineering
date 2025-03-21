@@ -3,11 +3,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export const Navbar = () => {
   const pathname = usePathname();
   const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false);
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const section = document.getElementById("about");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <>
@@ -24,14 +32,15 @@ export const Navbar = () => {
             />
           </Link>
           <nav className="hidden md:flex justify-between space-x-7 text-gray-600 font-semibold text-[14px]">
-            <Link
+            <a
               href=""
+              onClick={handleScroll}
               className={`hover:text-brand-700 hover:font-semibold ${
                 pathname === "" ? "text-brand-700 font-semibold" : ""
               }`}
             >
               About us
-            </Link>
+            </a>
             <Link
               href="/services"
               className={`hover:text-brand-700 hover:font-semibold ${
@@ -82,6 +91,17 @@ interface MobileNavbarProps {
 }
 
 export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
+  const handleMobileScroll = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    const section = document.getElementById("about");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    closeMenu();
+  };
+
   return (
     <section
       className={`fixed top-0 w-full h-dvh bg-base-white py-10 px-6 flex flex-col justify-between items-end md:hidden ${
@@ -105,10 +125,10 @@ export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
           </button>
         </div>
         <nav>
-          <Link
+          <a
             href=""
             className="flex justify-between items-center border-b-[0.5px] py-5 pr-2.5"
-            onClick={closeMenu}
+            onClick={handleMobileScroll}
           >
             About us
             <Image
@@ -117,7 +137,7 @@ export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
               width={16}
               height={16}
             />
-          </Link>
+          </a>
 
           <Link
             href="/services"
