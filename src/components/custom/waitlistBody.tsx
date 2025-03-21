@@ -8,7 +8,7 @@ export const WaitlistBody = () => {
           Be the First to Experience KAVOD
         </h1>
         <p className="text-[14px] md:text-[16px] leading-[20px] md:leading-[24px] max-w-[90%] md:max-w-[55%] lg:max-w-[45%] xl:max-w-[33%]">
-          Kavod Engineering Services offers expert welding inspection, coatings,
+          Kavod Engineering Services offers expert welding inspection, coatings
           and corrosion control, quality assurance, materials testing, and CWI
           training. Join our waitlist and be the first to access our full
           website and services.
