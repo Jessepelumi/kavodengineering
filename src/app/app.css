@@ -15,6 +15,7 @@
   /* Base Colors */
   --color-base-white: #ffffff;
   --color-base-black: #000000;
+  --color-base-black-40: #00000066;
   --color-transparent: #ffffff00;
   --color-transparent-70: #ffffff26;
 
@@ -42,9 +43,9 @@
   --color-brand-200: #96adc2;
   --color-brand-300: #6484a3;
   --color-brand-400: #325c85;
-  --color-brand-500: #003466; /* Main Brand Color */
+  --color-brand-500: #003466;
   --color-brand-600: #002a52;
-  --color-brand-700: #001f3d;
+  --color-brand-700: #001f3d; /* Main Brand Color */
   --color-brand-800: #001529;
   --color-brand-900: #00101f;
   --color-brand-950: #000a14;
