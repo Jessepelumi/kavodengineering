@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   background: var(--color-base-white);
-  color: var(--color-base-black);
+  color: var(--color-brand-900);
 }
 
 @theme {
@@ -66,5 +66,6 @@
   --color-secondary-950: #191100;
 
   /* Status Colors */
-  --color-error: #7D0A0A;
+  --color-error: #7d0a0a;
+  --color-background: #f2f4f5;
 }
