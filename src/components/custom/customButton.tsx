@@ -16,8 +16,8 @@ export const CustomButton = ({
 }: customButtonProps) => {
   const variantClasses = {
     primary:
-      "text-base-black bg-secondary-500 hover:text-base-white before:bg-brand-700",
-    secondary: "text-base-black bg-base-white before:bg-secondary-500",
+      "text-brand-900 bg-secondary-500 hover:text-base-white before:bg-brand-700",
+    secondary: "text-brand-900 bg-base-white before:bg-secondary-500",
   };
 
   return (
