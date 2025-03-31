@@ -5,8 +5,8 @@ export const HomeHeaderText = () => {
         Engineering Quality, Ensuring Integrity
       </h1>
       <p className="text-[14px] md:text-[16px] leading-[20px] md:leading-[24px] max-w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[45%]">
-        Precision engineering, coating, welding inspection, and quality
-        assurance for safer, stronger infrastructure.
+        Leading experts in materials quality assurance and quality control
+        inspection for safer, stronger infrastructure.
       </p>
     </article>
   );
