@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CustomButton } from "./customButton";
 import { SectionHeading } from "./sectionHeading";
-import Image from "next/image";
+//import Image from "next/image";
 
 export const SendMessageCard = () => {
   return (
