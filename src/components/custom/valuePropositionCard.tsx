@@ -15,7 +15,7 @@ export const ValuePropositionCard = ({
   description,
 }: ValuePropositionCardProps) => {
   return (
-    <div className="h-[320px] md:h-[280px] lg:h-[300px] bg-background flex flex-col justify-between p-4">
+    <div className="h-[320px] md:h-[280px] lg:h-[300px] bg-custom-background flex flex-col justify-between p-4">
       <div className={clsx("relative", imageClassName)}>
         <Image
           src={`/svg/${image}`}
