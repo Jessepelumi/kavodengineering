@@ -4,8 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { Navigation, Autoplay } from "swiper/modules";
-import Image from "next/image";
 import { Swiper as SwiperType } from "swiper";
+
+import Image from "next/image";
 import { useRef } from "react";
 
 interface BackgroundCarouselProps {
