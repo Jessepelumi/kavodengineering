@@ -41,7 +41,7 @@ export const SendMessageCard = () => {
       </SectionHeading>
 
       <CustomButton variant="secondary" className="w-fit">
-        <Link href="/services">Get a consultation</Link>
+        <Link href="/contact">Get a consultation</Link>
       </CustomButton>
     </section>
   );
