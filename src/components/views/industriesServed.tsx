@@ -1,6 +1,7 @@
 import { IndustryDetails, Industry } from "@/static/industryDetails";
 import { IndustriesCard } from "../custom/industriesCard";
 import { SectionHeading } from "../custom/sectionHeading";
+import { IndustriesGrid } from "../custom/industriesGrid";
 
 export const IndustriesServed = () => {
   return (
@@ -12,17 +13,8 @@ export const IndustriesServed = () => {
         paragraph="From welding inspection to failure analysis, we provide precision-engineered solutions across several industries."
         className="items-center text-center"
       />
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {IndustryDetails.map((industry: Industry, index: number) => (
-          <div key={index}>
-            <IndustriesCard
-              icon={industry.icon}
-              title={industry.industry}
-              details={industry.description}
-            />
-          </div>
-        ))}
-      </section>
+
+      <IndustriesGrid />
     </div>
   );
 };
