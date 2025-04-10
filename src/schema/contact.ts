@@ -6,7 +6,7 @@ export const contactScheme = z.object({
   contactNumber: z
     .string()
     .optional()
-    .refine((value) => !value || /^\d{10,}$/.test(value), {message: "Phone number must be at least 10 digits"}),
+    .refine((value) => !value || /^\d{10,}$/.test(value), {message: "Invalid Phone number"}),
   subject: z.string().min(1, { message: "Please choose a subject" }),
   message: z.string().min(1, { message: "Please enter a message" }),
 });
