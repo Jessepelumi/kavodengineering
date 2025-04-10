@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-import { CustomButton } from "../custom/customButton";
+
+import { CustomButton } from "../shared/customButton";
 
 // static navigation bar component
 export const Navbar = () => {

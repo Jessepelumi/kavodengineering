@@ -1,14 +1,14 @@
-interface ServiceContactHeaderProps {
+interface ServiceHeaderProps {
   section: string;
   title: string;
   description: string;
 }
 
-export const ServiceContactHeader = ({
+export const ServiceHeader = ({
   section,
   title,
   description,
-}: ServiceContactHeaderProps) => {
+}: ServiceHeaderProps) => {
   return (
     <header className="relative flex justify-center items-center bg-[url('/images/consultation.jpeg')] bg-cover bg-center py-[200px]">
       <div className="absolute inset-0 bg-base-black-70"></div>

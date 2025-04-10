@@ -1,5 +1,5 @@
-import { SectionHeading } from "../custom/sectionHeading";
-import { IndustriesGrid } from "../custom/industriesGrid";
+import { IndustriesGrid } from "@/components/shared/industriesGrid";
+import { SectionHeading } from "@/components/shared/sectionHeading";
 
 export const IndustriesServed = () => {
   return (

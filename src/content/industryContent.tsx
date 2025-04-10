@@ -4,7 +4,7 @@ export type Industry = {
   icon: string;
 };
 
-export const IndustryDetails: Industry[] = [
+export const IndustryContent: Industry[] = [
   {
     industry: "Construction & Maintenance",
     description:

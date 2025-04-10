@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { SectionHeading } from "@/components/custom/sectionHeading";
-import { ServicesDetails } from "@/static/servicesDetails";
+import { ServicesContent } from "@/content/servicesContent";
+import { SectionHeading } from "@/components/shared/sectionHeading";
 
 export const ServiceOne = () => {
   return (
@@ -48,7 +48,7 @@ export const ServiceOne = () => {
         </div>
       </div>
 
-      <p>{ServicesDetails.engineeringConsulting}</p>
+      <p>{ServicesContent.engineeringConsulting}</p>
     </section>
   );
 };

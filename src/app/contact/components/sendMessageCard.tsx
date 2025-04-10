@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { CustomButton } from "./customButton";
-import { SectionHeading } from "./sectionHeading";
+
+import { CustomButton } from "@/components/shared/customButton";
+import { SectionHeading } from "@/components/shared/sectionHeading";
 //import Image from "next/image";
 
 export const SendMessageCard = () => {

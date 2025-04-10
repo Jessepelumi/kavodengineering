@@ -1,10 +1,10 @@
-import ContactForm from "@/components/views/contactForm";
-import { ServiceContactHeader } from "@/components/views/serviceContactHeader";
+import ContactForm from "@/app/contact/components/contactForm";
+import { ContactHeader } from "./components/contactHeader";
 
 export default function Contact() {
   return (
     <>
-      <ServiceContactHeader
+      <ContactHeader
         section="contact us"
         title="Need a Consultation?"
         description="Have questions or need expert assistance? Reach out to us, and our team will be happy to assist you."

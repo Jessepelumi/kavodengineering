@@ -1,7 +1,7 @@
-import { AboutUs } from "@/components/views/aboutUs";
-import { HomeHeader } from "@/components/views/homeHeader";
-import { IndustriesServed } from "@/components/views/industriesServed";
-import { OurServices } from "@/components/views/ourServices";
+import { AboutUs } from "./components/aboutUs";
+import { HomeHeader } from "./components/homeHeader";
+import { IndustriesServed } from "./components/industriesServed";
+import { OurServices } from "./components/ourServices";
 
 export default function Home() {
   return (

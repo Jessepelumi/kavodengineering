@@ -1,16 +1,17 @@
-import { IndustriesGrid } from "@/components/custom/industriesGrid";
-import { SectionHeading } from "@/components/custom/sectionHeading";
-import { SendMessageCard } from "@/components/custom/sendMessageCard";
-import { ServiceContactHeader } from "@/components/views/serviceContactHeader";
-import { ServiceOne } from "@/components/custom/serviceOne";
-import { ServiceTwo } from "@/components/custom/serviceTwo";
-import { ServiceThree } from "@/components/custom/serviceThree";
-import { ServiceFour } from "@/components/custom/serviceFour";
+import { ServiceHeader } from "./components/serviceHeader";
+import { ServiceOne } from "./components/serviceOne";
+import { ServiceTwo } from "./components/serviceTwo";
+import { ServiceThree } from "./components/serviceThree";
+import { ServiceFour } from "./components/serviceFour";
+
+import { SectionHeading } from "@/components/shared/sectionHeading";
+import { IndustriesGrid } from "@/components/shared/industriesGrid";
+import { SendMessageCard } from "@/app/contact/components/sendMessageCard";
 
 export default function Services() {
   return (
     <>
-      <ServiceContactHeader
+      <ServiceHeader
         section="our services"
         title="Our Expertise, Your Assurance"
         description="At KAVOD, we specialize in advanced material testing, inspections, and failure analysis to help businesses maintain the highest safety, durability, and compliance standards."

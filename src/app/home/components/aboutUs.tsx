@@ -1,5 +1,6 @@
-import { SectionHeading } from "../custom/sectionHeading";
-import { VisionMissionText } from "../custom/visionMissionText";
+import { SectionHeading } from "@/components/shared/sectionHeading";
+import { VisionMissionText } from "./visionMissionText";
+
 
 export const AboutUs = () => {
   return (

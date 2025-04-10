@@ -23,7 +23,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 
 import { contactScheme } from "@/schema/contact";
-import { CustomButton } from "../custom/customButton";
+import { CustomButton } from "@/components/shared/customButton";
 
 export default function ContactForm() {
   const form = useForm<z.infer<typeof contactScheme>>({

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import "./app.css";
-import { Navbar } from "@/components/views/navbar";
-import { Footer } from "@/components/views/footer";
-import { ContactBanner } from "@/components/custom/contactBanner";
+import "../styles/app.css";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
+import { ContactBanner } from "@/components/layout/contactBanner";
 
 export const metadata: Metadata = {
   title: "Kavod Engineering",

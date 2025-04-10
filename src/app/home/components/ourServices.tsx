@@ -1,9 +1,11 @@
 import Link from "next/link";
-import { CustomButton } from "../custom/customButton";
-import { ServicesCard } from "../custom/servicesCard";
-import { SendMessageCard } from "../custom/sendMessageCard";
-import { SectionHeading } from "../custom/sectionHeading";
-import { ValuePropositionCard } from "../custom/valuePropositionCard";
+
+import { ValuePropositionCard } from "./valuePropositionCard";
+
+import { CustomButton } from "@/components/shared/customButton";
+import { SectionHeading } from "@/components/shared/sectionHeading";
+import { ServicesCard } from "@/components/shared/servicesCard";
+import { SendMessageCard } from "@/app/contact/components/sendMessageCard";
 
 export const OurServices = () => {
   return (
