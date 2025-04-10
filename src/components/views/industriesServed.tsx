@@ -1,5 +1,3 @@
-import { IndustryDetails, Industry } from "@/static/industryDetails";
-import { IndustriesCard } from "../custom/industriesCard";
 import { SectionHeading } from "../custom/sectionHeading";
 import { IndustriesGrid } from "../custom/industriesGrid";
 
