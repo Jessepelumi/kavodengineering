@@ -1,4 +1,4 @@
-import { IndustriesGrid } from "@/components/shared/industriesGrid";
+import { IndustriesGrid } from "./industriesGrid";
 import { SectionHeading } from "@/components/shared/sectionHeading";
 
 export const IndustriesServed = () => {
@@ -7,8 +7,8 @@ export const IndustriesServed = () => {
       <SectionHeading
         variant="white"
         section="industries served"
-        title="Trusted Across Key Industries"
-        paragraph="From welding inspection to failure analysis, we provide precision-engineered solutions across several industries."
+        title="Precision Solutions Across Sectors"
+        paragraph="From on-site inspection to laboratory testing, Kavod delivers tailored services for"
         className="items-center text-center"
       />
 

@@ -1,5 +1,5 @@
-import { IndustryContent, Industry } from "@/content/industryContent";
 import { IndustriesCard } from "./industriesCard";
+import { IndustryContent, Industry } from "@/content/industryContent";
 
 export const IndustriesGrid = () => {
   return (
