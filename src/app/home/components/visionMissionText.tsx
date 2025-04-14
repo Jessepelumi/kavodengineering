@@ -1,4 +1,4 @@
-import { BlackOverlay, Overlay } from "@/components/shared/overlay";
+import { BlackOverlay } from "@/components/shared/overlay";
 import Image from "next/image";
 
 interface VisionMissionTextProps {
