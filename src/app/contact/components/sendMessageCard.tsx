@@ -16,18 +16,14 @@ export const SendMessageCard = () => {
         />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center gap-2.5">
+      <div className="z-10 flex flex-col items-center gap-2.5">
         <SectionHeading
           section="send us a message"
-          title="Get Started with"
-          paragraph="Let's discuss how we can support your project with precision engineering and expert quality assurance."
-          className="items-center"
+          title="Ready to elevate your next project?"
+          paragraph="Let's discuss how Kavod can ensure your infrastructure is built with the highest standards of quality and integrity."
+          className="items-center text-center"
           variant="white"
-        >
-          <span className="underline underline-offset-8 decoration-secondary-500 ml-2">
-            KAVOD Engineering
-          </span>
-        </SectionHeading>
+        />
 
         <CustomButton variant="secondary" className="w-fit">
           <Link href="/contact">Get a consultation</Link>
