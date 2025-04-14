@@ -1,33 +1,37 @@
 import { SectionHeading } from "@/components/shared/sectionHeading";
 import { VisionMissionText } from "./visionMissionText";
 
-
 export const AboutUs = () => {
   return (
     <div
       id="about"
-      className="flex flex-col xl:flex-row gap-10 xl:gap-14 py-10 px-5 md:py-16 md:px-10"
+      className="flex flex-col gap-10 xl:gap-14 py-10 px-5 md:py-16 md:px-10"
     >
-      <section className="xl:w-1/2">
+      <section className="">
         <SectionHeading
           section="about us"
           title="Experts in Welding & Inspection"
-          paragraph="At KAVOD, we combine deep expertise in welding engineering, material science, and quality assurance to help clients deliver safer, stronger, and more reliable infrastructure."
+          paragraph="At Kavod Engineering Services, our deep expertise in welding engineering, material science, and quality assurance empowers clients to deliver infrastructure that stands the test of time."
+          className="items-center text-center"
         />
       </section>
 
-      <section className="xl:w-1/2 flex flex-col gap-10 xl:gap-14">
-        <VisionMissionText
-          icon="Target.svg"
-          title="Our Mission"
-          paragraph="Our mission at Kavod Engineering Services is to deliver industry-leading quality assurance, inspection, and consulting services that enhance safety, compliance, and operational excellence. We strive to build long-term partnership with our clients by upholding the highest standards of integrity, professionalism, and technical expertise."
-        />
+      <section className="flex flex-col md:flex-row gap-10 xl:gap-14">
+        <div className="w-full md:w-1/2">
+          <VisionMissionText
+            image="missionImage.jpeg"
+            title="Our Mission"
+            paragraph="To provide industry-leading inspection, testing, and consulting services that elevate safety, compliance, and performance, fostering long-term partnerships built on integrity and technical excellence."
+          />
+        </div>
 
-        <VisionMissionText
-          icon="Eye.svg"
-          title="Our Vision"
-          paragraph="To be a trusted leader in quality assurance and materials consulting, setting new benchmarks for excellence in the structural and manufacturing industries Through innovation, continuous improvement, and a commitment to ethical engineering practices, we aim to contribute to a safer, more efficient, and high-quality built environment."
-        />
+        <div className="w-full md:w-1/2">
+          <VisionMissionText
+            image="visionImage.jpeg"
+            title="Our Vision"
+            paragraph="To be the benchmark for quality assurance and materials consulting in structural and manufacturing industries, driving innovation, continuous improvement, and ethical engineering for a safer, more efficient built environment."
+          />
+        </div>
       </section>
     </div>
   );
