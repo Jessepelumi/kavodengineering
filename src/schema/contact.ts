@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const contactScheme = z.object({
+export const contactSchema = z.object({
   name: z.string().min(1, { message: "The name field cannot be empty" }),
   email: z.string().email("Please enter a valid email address"),
   contactNumber: z
