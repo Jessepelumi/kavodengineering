@@ -38,34 +38,34 @@ export default function ContactForm() {
     mode: "onSubmit",
   });
 
-  // function onSubmit() {}
+  function onSubmit() {}
 
   // onSubmit function -- review this
-  async function onSubmit(values: z.infer<typeof contactSchema>) {
-    try {
-      const response = await fetch("/api/consultation", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
+  // async function onSubmit(values: z.infer<typeof contactSchema>) {
+  //   try {
+  //     const response = await fetch("/api/consultation", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(values),
+  //     });
 
-      const data = await response.json();
+  //     const data = await response.json();
 
-      if (data.status === "success") {
-        console.log("Service request successfully sent:", data.message);
-        // You can show a toast here or reset the form:
-        form.reset();
-      } else {
-        console.error("Error submitting form:", data.message);
-        // Optionally show an error toast
-      }
-    } catch (error) {
-      console.error("Unexpected error:", error);
-      // Optionally show an error toast
-    }
-  }
+  //     if (data.status === "success") {
+  //       console.log("Service request successfully sent:", data.message);
+  //       // You can show a toast here or reset the form:
+  //       form.reset();
+  //     } else {
+  //       console.error("Error submitting form:", data.message);
+  //       // Optionally show an error toast
+  //     }
+  //   } catch (error) {
+  //     console.error("Unexpected error:", error);
+  //     // Optionally show an error toast
+  //   }
+  // }
 
   return (
     <section className=" shadow-2xl bg-base-white py-6 px-5 md:py-9 md:px-8 flex flex-col space-y-5 justify-center ">
@@ -225,7 +225,7 @@ export default function ContactForm() {
             )}
           />
 
-          <CustomButton onClick={() => {onSubmit}}>
+          <CustomButton>
             <span>Submit</span>
           </CustomButton>
         </form>
