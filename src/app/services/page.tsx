@@ -1,11 +1,6 @@
 import { ServiceHeader } from "./components/serviceHeader";
-import { ServiceOne } from "./components/serviceOne";
-import { ServiceTwo } from "./components/serviceTwo";
-import { ServiceThree } from "./components/serviceThree";
-import { ServiceFour } from "./components/serviceFour";
-
-import { SectionHeading } from "@/components/shared/sectionHeading";
-import { IndustriesGrid } from "@/components/shared/industriesGrid";
+import { ServiceCard } from "./components/serviceCard";
+import { ServicesContent } from "@/content/servicesContent";
 import { SendMessageCard } from "@/app/contact/components/sendMessageCard";
 
 export default function Services() {
@@ -18,22 +13,16 @@ export default function Services() {
       />
 
       <div className="flex flex-col gap-15 md:gap-20 py-16 px-5 md:px-10">
-        <ServiceOne />
-        <ServiceTwo />
-        <ServiceThree />
-        <ServiceFour />
-      </div>
-
-      <div className="bg-brand-700 flex flex-col gap-10 py-16 px-5 md:px-10 items-center">
-        <SectionHeading
-          variant="white"
-          section="industries served"
-          title="We cover materials engineering across these industries"
-          paragraph="From welding inspection to failure analysis, we provide precision-engineered solutions across several industries."
-          className="items-center text-center"
-        />
-
-        <IndustriesGrid />
+        {ServicesContent.map((service, index) => (
+          <ServiceCard
+            key={service.title}
+            index={index}
+            image={service.image}
+            section={service.section}
+            title={service.title}
+            description={service.description}
+          />
+        ))}
       </div>
 
       <div className="flex flex-col gap-10 py-16 px-5 md:px-10">
