@@ -12,7 +12,7 @@ export default function Contact() {
       />
 
       <div className="relative pb-20 px-[5%] lg:px-[10%] xl:px-[15%]">
-        <div className="relative z-100 -mt-20">
+        <div className="relative z-10 -mt-20">
           <ContactForm />
         </div>
       </div>
