@@ -21,7 +21,7 @@ export const SendMessageCard = () => {
           section="send us a message"
           title="Ready to elevate your next project?"
           paragraph="Let's discuss how Kavod can ensure your infrastructure is built with the highest standards of quality and integrity."
-          className="items-center text-center"
+          className="w-full items-center text-center"
           variant="white"
         />
 

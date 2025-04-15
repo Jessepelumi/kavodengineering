@@ -5,7 +5,6 @@ interface SectionHeadingProps {
   section: string;
   title: string;
   paragraph?: string;
-  children?: React.ReactNode;
   className?: string;
   variant?: "white" | "black";
   titleClassName?: string;
@@ -16,7 +15,6 @@ export const SectionHeading = ({
   section,
   title,
   paragraph,
-  children,
   className,
   variant = "black",
   titleClassName,
@@ -45,16 +43,11 @@ export const SectionHeading = ({
         )}
       >
         {title}
-        {React.isValidElement<{ className?: string }>(children)
-          ? React.cloneElement(children, {
-              className: clsx(children.props.className),
-            })
-          : children}
       </h3>
       {paragraph && (
         <p
           className={clsx(
-            "md:text-[18px] md:max-w-[65%] lg:max-w-[45%] xl:max-w-[30%]",
+            "md:text-[18px] md:max-w-[70%] lg:max-w-[45%] xl:max-w-[30%]",
             paragraphClassName
           )}
         >

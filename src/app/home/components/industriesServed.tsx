@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/shared/sectionHeading";
 
 export const IndustriesServed = () => {
   return (
-    <div className="bg-brand-700 flex flex-col gap-10 py-16 px-5 md:px-10 items-center">
+    <div className="bg-brand-700 flex flex-col gap-10 py-16 px-5 md:px-10">
       <SectionHeading
         variant="white"
         section="industries served"
