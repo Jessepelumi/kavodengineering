@@ -6,8 +6,9 @@ export default function Contact() {
     <>
       <ContactHeader
         section="contact us"
-        title="Need a Consultation?"
-        description="Have questions or need expert assistance? Reach out to us, and our team will be happy to assist you."
+        title="Let's Talk"
+        titleTwo="Quality & Integrity"
+        description="Whether you're planning a new project or need expert guidance, our team is ready to help."
       />
 
       <div className="relative pb-20 px-[5%] lg:px-[10%] xl:px-[15%]">

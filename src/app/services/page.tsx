@@ -8,8 +8,9 @@ export default function Services() {
     <>
       <ServiceHeader
         section="our services"
-        title="Our Expertise, Your Assurance"
-        description="At KAVOD, we specialize in advanced material testing, inspections, and failure analysis to help businesses maintain the highest safety, durability, and compliance standards."
+        title="Your Assurance,"
+        titleTwo="Our Expertise"
+        description="At Kavod Engineering Services, we combine deep technical know-how with rigorous quality standards to deliver solutions that keep your infrastructure safe, reliable, and compliant."
       />
 
       <div className="flex flex-col gap-15 md:gap-20 py-16 px-5 md:px-10">

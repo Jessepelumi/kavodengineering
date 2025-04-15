@@ -1,12 +1,14 @@
 interface ContactHeaderProps {
   section: string;
   title: string;
+  titleTwo: string;
   description: string;
 }
 
 export const ContactHeader = ({
   section,
   title,
+  titleTwo,
   description,
 }: ContactHeaderProps) => {
   return (
@@ -15,10 +17,17 @@ export const ContactHeader = ({
 
       <section className="flex flex-col gap-2 items-center text-center text-base-white z-10">
         <h4 className="text-secondary-500 font-medium uppercase">{section}</h4>
-        <h3 className="text-[36px] leading-[42px] sm:text-[52px] md:text-[64px]  md:leading-[68px] font-bold max-w-[95%] md:max-w-[85%] lg:max-w-[80%] xl:max-w-[70%]">
-          {title}
-        </h3>
-        <p className="text-[14px] md:text-[16px] leading-[20px] md:leading-[24px] max-w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[45%]">
+
+        <div>
+          <h3 className="text-[36px] leading-[42px] sm:text-[52px] md:text-[64px]  md:leading-[68px] font-bold">
+            {title}
+          </h3>
+          <h3 className="text-[36px] leading-[42px] sm:text-[52px] md:text-[64px]  md:leading-[68px] font-bold ">
+            {titleTwo}
+          </h3>
+        </div>
+
+        <p className="text-[14px] md:text-[16px] leading-[20px] md:leading-[24px] max-w-[90%] lg:max-w-[60%] xl:max-w-[55%]">
           {description}
         </p>
       </section>
