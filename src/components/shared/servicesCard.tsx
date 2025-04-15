@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BlurOverlay } from "./overlay";
 
 interface ServicesCardProps {
   image: string;
@@ -12,7 +13,7 @@ export const ServicesCard = ({
   description,
 }: ServicesCardProps) => {
   return (
-    <div className="relative w-full h-[220px] md:h-[450px]">
+    <div className="relative w-full h-[220px] md:h-[457px]">
       <Image
         src={`/images/${image}`}
         alt={`Kavod ${title} Service`}
@@ -20,8 +21,10 @@ export const ServicesCard = ({
         className="object-cover object-center"
       />
 
-      <div className="w-full absolute bottom-0 p-4 text-base-white bg-base-black-40 backdrop-blur-xs">
-        <h4>{title}</h4>
+      <BlurOverlay />
+
+      <div className="w-full text-base-white z-20 absolute bottom-0 p-4">
+        <h3 className="text-[18px] font-semibold">{title}</h3>
         <p>{description}</p>
       </div>
     </div>
