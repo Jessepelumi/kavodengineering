@@ -10,8 +10,10 @@ export default function Contact() {
         description="Have questions or need expert assistance? Reach out to us, and our team will be happy to assist you."
       />
 
-      <div className=" flex justify-center items-center h-screen px-[5%] lg:px-[10%] xl:px-[15%]">
-        <ContactForm />
+      <div className="relative pb-20 px-[5%] lg:px-[10%] xl:px-[15%]">
+        <div className="relative z-100 -mt-20">
+          <ContactForm />
+        </div>
       </div>
     </>
   );

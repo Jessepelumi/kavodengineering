@@ -68,15 +68,15 @@ export default function ContactForm() {
   // }
 
   return (
-    <section className=" shadow-2xl bg-base-white py-6 px-5 md:py-9 md:px-8 flex flex-col space-y-5 justify-center ">
+    <section className="shadow-2xl bg-base-white py-6 px-5 md:py-9 md:px-8 flex flex-col space-y-5 justify-center ">
       <div className="flex flex-col items-center gap-2 text-center">
         <h3 className="text-[36px] leading-[42px] font-medium max-w-[95%] md:max-w-[85%] lg:max-w-[80%] xl:max-w-[70%]">
           Send us a message
         </h3>
         <p className="text-[14px] md:text-[16px] leading-[20px] md:leading-[24px] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[45%]">
           Thank you for your interest in KAVOD Engineering Services. Use the
-          form below to direct your Inquiries, consultations, or service
-          requests. Response time: 1-3 hours
+          form below to direct your inquiries, consultations, or service
+          requests.
         </p>
       </div>
 
