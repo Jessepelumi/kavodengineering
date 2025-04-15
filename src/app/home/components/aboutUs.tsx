@@ -13,6 +13,7 @@ export const AboutUs = () => {
           title="Experts in Welding & Inspection"
           paragraph="At Kavod Engineering Services, our deep expertise in welding engineering, material science, and quality assurance empowers clients to deliver infrastructure that stands the test of time."
           className="items-center text-center"
+          paragraphClassName="md:max-w-[85%] lg:max-w-[60%] xl:max-w-[40%]"
         />
       </section>
 
