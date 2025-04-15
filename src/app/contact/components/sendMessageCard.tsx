@@ -16,7 +16,7 @@ export const SendMessageCard = () => {
         />
       </div>
 
-      <div className="z-10 flex flex-col items-center gap-2.5">
+      <div className="z-10 flex flex-col items-center gap-5">
         <SectionHeading
           section="send us a message"
           title="Ready to elevate your next project?"
