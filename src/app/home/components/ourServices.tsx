@@ -46,7 +46,7 @@ export const OurServices = () => {
 
           <ServicesCard
             image="serviceImageFour.jpeg"
-            title="Training Training"
+            title="Technical Training"
             description="CWI Training, Quality and Safety Workshops"
           />
         </section>
