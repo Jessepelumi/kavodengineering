@@ -2,7 +2,7 @@ import { ValuePropositionCard } from "./valuePropositionCard";
 
 import { CustomButton } from "@/components/shared/customButton";
 import { SectionHeading } from "@/components/shared/sectionHeading";
-import { ServicesCard } from "@/components/shared/servicesCard";
+import { ServicesCard } from "@/app/home/components/servicesCard";
 import { SendMessageCard } from "@/app/contact/components/sendMessageCard";
 
 export const OurServices = () => {

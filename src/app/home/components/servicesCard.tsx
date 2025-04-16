@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BlurOverlay } from "./overlay";
+import { BlurOverlay } from "@/components/shared/overlay";
 
 interface ServicesCardProps {
   image: string;
