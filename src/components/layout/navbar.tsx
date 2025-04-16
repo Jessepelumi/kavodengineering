@@ -2,22 +2,32 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 import { CustomButton } from "../shared/customButton";
 
 // static navigation bar component
 export const Navbar = () => {
+  const router = useRouter();
   const pathname = usePathname();
   const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false);
 
   // function to handle scrolling into the about section
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
-    const section = document.getElementById("about");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    if (pathname === "/home") {
+      const section = document.getElementById("about");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      router.push("/home#about");
+
+      setTimeout(() => {
+        router.replace("/home", { scroll: false });
+      }, 250);
     }
   };
 
@@ -37,9 +47,13 @@ export const Navbar = () => {
 
         <div className="flex items-center space-x-7">
           <nav className="hidden md:flex justify-between space-x-7 text-gray-600 text-[14px]">
-            <a href="" onClick={handleScroll} className="hover:text-brand-700">
+            <Link
+              href="/home#about"
+              onClick={handleScroll}
+              className="hover:text-brand-700"
+            >
               About us
-            </a>
+            </Link>
 
             <Link
               href="/services"
@@ -84,13 +98,25 @@ interface MobileNavbarProps {
 }
 
 export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const handleMobileScroll = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
     e.preventDefault();
-    const section = document.getElementById("about");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    if (pathname === "/home") {
+      const section = document.getElementById("about");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      router.push("/home#about");
+
+      setTimeout(() => {
+        router.replace("/home", { scroll: false });
+      }, 250);
     }
     closeMenu();
   };
@@ -120,8 +146,8 @@ export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
         </div>
 
         <nav>
-          <a
-            href=""
+          <Link
+            href="/home#about"
             className="flex justify-between items-center border-b-[0.5px] py-5 pr-2.5"
             onClick={handleMobileScroll}
           >
@@ -132,7 +158,7 @@ export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
               width={16}
               height={16}
             />
-          </a>
+          </Link>
 
           <Link
             href="/services"
