@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 import { CustomButton } from "@/components/shared/customButton";
@@ -25,8 +24,8 @@ export const SendMessageCard = () => {
           variant="white"
         />
 
-        <CustomButton variant="secondary" className="w-fit">
-          <Link href="/contact">Get a consultation</Link>
+        <CustomButton href="/contact" variant="secondary" className="w-fit">
+          Get a consultation
         </CustomButton>
       </div>
     </section>

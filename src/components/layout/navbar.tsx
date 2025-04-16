@@ -27,7 +27,7 @@ export const Navbar = () => {
 
       setTimeout(() => {
         router.replace("/home", { scroll: false });
-      }, 250);
+      }, 300);
     }
   };
 
@@ -65,8 +65,8 @@ export const Navbar = () => {
             </Link>
           </nav>
 
-          <CustomButton className="hidden md:block">
-            <Link href="/contact">Get a consultation</Link>
+          <CustomButton href="/contact" className="hidden md:block">
+            Get a consultation
           </CustomButton>
         </div>
 
@@ -116,7 +116,7 @@ export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
 
       setTimeout(() => {
         router.replace("/home", { scroll: false });
-      }, 250);
+      }, 300);
     }
     closeMenu();
   };
@@ -127,7 +127,7 @@ export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
         isOpen ? "-translate-x-0" : "translate-x-full"
       } transform transition-transform duration-400`}
     >
-      <div className="w-full">
+      <div>
         <div className="flex justify-between items-center border-b-[0.5px] py-5 pr-2.5">
           <Link href="/" onClick={closeMenu}>
             <Image
@@ -176,10 +176,8 @@ export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
         </nav>
       </div>
 
-      <CustomButton className="py-3.5">
-        <Link href="/contact" onClick={closeMenu}>
-          Get a consultation
-        </Link>
+      <CustomButton href="/contact" onClick={closeMenu} className="text-center py-3.5">
+        Get a consultation
       </CustomButton>
     </section>
   );

@@ -225,9 +225,7 @@ export default function ContactForm() {
             )}
           />
 
-          <CustomButton>
-            <span>Submit</span>
-          </CustomButton>
+          <CustomButton>Submit</CustomButton>
         </form>
       </Form>
     </section>

@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { ValuePropositionCard } from "./valuePropositionCard";
 
 import { CustomButton } from "@/components/shared/customButton";
@@ -18,10 +16,8 @@ export const OurServices = () => {
             paragraph="From welding inspection to failure analysis, we provide precision-engineered solutions."
           />
 
-          <CustomButton className="w-fit">
-            <Link href="/services" className="relative z-10">
-              View all services
-            </Link>
+          <CustomButton href="/services" className="w-fit">
+            View all services
           </CustomButton>
         </section>
 
