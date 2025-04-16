@@ -3,12 +3,34 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 export const Footer = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const currentYear = new Date().getFullYear();
 
   const phoneNumber = "+1 678 908 9470";
   const [copied, setCopied] = useState(false);
+
+  // function to handle scrolling into the about section
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+
+    if (pathname === "/home") {
+      const section = document.getElementById("about");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      router.push("/home#about");
+
+      setTimeout(() => {
+        router.replace("/home", { scroll: false });
+      }, 300);
+    }
+  };
 
   const copyPhoneNumber = async () => {
     try {
@@ -42,7 +64,11 @@ export const Footer = () => {
             <div className="flex flex-col gap-2">
               <h3 className="font-bold">Quick Links</h3>
               <nav className="flex flex-col">
-                <Link href="#about" className="hover:text-gray-600">
+                <Link
+                  href="/home#about"
+                  onClick={handleScroll}
+                  className="hover:text-gray-600"
+                >
                   About us
                 </Link>
                 <Link href="/" className="hover:text-gray-600">
