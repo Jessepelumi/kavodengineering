@@ -25,7 +25,7 @@ export const OurServices = () => {
           <ServicesCard
             image="serviceImageOne.jpeg"
             title="Engineering Consulting"
-            description="Quality Engineering, Failure Prevention"
+            description="Technical service experts, Project Management"
             href="/services/#consulting"
           />
 
