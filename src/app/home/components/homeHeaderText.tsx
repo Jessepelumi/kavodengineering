@@ -7,7 +7,7 @@ export const HomeHeaderText = () => {
 
       <p className="text-[14px] md:text-[16px] leading-[20px] md:leading-[24px] max-w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[45%]">
         Leading experts in materials quality assurance and quality control
-        inspection for safer, stronger infrastructure.
+        inspection for safer and stronger infrastructure.
       </p>
     </article>
   );

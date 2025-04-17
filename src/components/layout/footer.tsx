@@ -54,7 +54,7 @@ export const Footer = () => {
           />
           <p className="w-full md:w-[75%] lg:w-[55%] xl:w-[40%]">
             We are trusted experts in engineering, welding inspection, coatings,
-            and quality assurance for safer, stronger infrastructure.
+            and quality assurance for safer and stronger infrastructure.
           </p>
         </div>
 

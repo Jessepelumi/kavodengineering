@@ -8,7 +8,7 @@ export default function Contact() {
         section="contact us"
         title="Let's Talk"
         titleTwo="Quality & Integrity"
-        description="Whether you're planning a new project or need expert guidance, our team is ready to help."
+        description="Whether you're planning a new project or need expert guidance, our team is ready to provide dependable asset management and comprehensive quality assurance solutions."
       />
 
       <div className="relative pb-20 px-[5%] lg:px-[10%] xl:px-[15%]">
