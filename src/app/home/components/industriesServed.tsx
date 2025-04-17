@@ -8,7 +8,7 @@ export const IndustriesServed = () => {
         variant="white"
         section="industries served"
         title="Precision Solutions Across Sectors"
-        paragraph="From on-site inspection to laboratory testing, Kavod delivers tailored services for"
+        paragraph="From on-site inspections to laboratory testing, Kavod delivers tailored services for diverse industries."
         className="items-center text-center"
       />
 
