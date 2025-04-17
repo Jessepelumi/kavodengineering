@@ -6,15 +6,15 @@ export type Industry = {
 
 export const IndustryContent: Industry[] = [
   {
-    industry: "Construction & Maintenance",
+    industry: "Construction & Fabrication Maintenance",
     description:
-      "KAVOD provides expert welding inspections, materials testing, and failure analysis to ensure buildings, bridges, and infrastructure projects meet the highest safety and durability standards.",
+      "KAVOD Engineering Services provides construction inspection & fabrication inspection services. Our capabilities include traditional NDT inspection services as well as a full range of advanced NDT services that meet the different international standards for material quality acceptance.",
     icon: "/svg/Wrench.svg",
   },
   {
     industry: "Oil & Gas",
     description:
-      "KAVOD helps oil and gas companies maintain safety and regulatory compliance through rigorous testing, failure analysis, and materials evaluations for pipelines, drilling sites, and refineries.",
+      "KAVOD works closely with pipeline operators to provide independent non-destructive testing (NDT) for every aspect of the upstream, midstream, and downstream processes to maintain safety and regulatory compliance.",
     icon: "/svg/Drop.svg",
   },
   {
@@ -32,7 +32,7 @@ export const IndustryContent: Industry[] = [
   {
     industry: "Aerospace",
     description:
-      "Flight demands perfection. KAVOD provides rigorous testing, material evaluations, and failure analysis to enhance aircraft safety, reliability, and compliance, ensuring optimal performance from takeoff to touchdown.",
+      "Our precision aviation inspection & NDT techniques can detect a variety of defects, such as material thickness flaws, welding defects, porosity, cracks, corrosion and other hard to detect defects. We employ a variety of NDT methods along with visual inspections depending on the component being tested.",
     icon: "/svg/AirplaneTakeoff.svg",
   },
   {
