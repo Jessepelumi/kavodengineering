@@ -15,7 +15,7 @@ export const ServicesContent = [
     section: "precision testing",
     title: "Testing & Analysis",
     description:
-      "Our comprehensive testing and analysis services cover mechanical testing, chemical analysis, non-destructive testing (NDT), and metallurgical evaluations to assess strength, composition, and durability. We help industries prevent failures, improve product performance, and comply with safety regulations.",
+      "Our comprehensive testing and analysis services cover mechanical testing, non-destructive testing (NDT), and metallurgical evaluations to assess strength and durability. We help industries prevent failures, improve product performance, and comply with safety regulations.",
   },
   {
     id: 3,
