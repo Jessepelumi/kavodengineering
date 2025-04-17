@@ -7,6 +7,7 @@ interface ServiceCardProps {
   title: string;
   description: string;
   image: string;
+  id: string;
 }
 
 export const ServiceCard = ({
@@ -15,11 +16,13 @@ export const ServiceCard = ({
   title,
   description,
   image,
+  id,
 }: ServiceCardProps) => {
   const isEven = index % 2 === 0;
 
   return (
     <section
+      id={id}
       className={`flex flex-col md:flex-row gap-5 md:gap-10 ${
         isEven ? "md:flex-row" : "md:flex-row-reverse"
       }`}

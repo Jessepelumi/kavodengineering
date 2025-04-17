@@ -1,6 +1,7 @@
 export const ServicesContent = [
   {
     id: 1,
+    link: "consulting",
     image: "expertGuidance.jpeg",
     section: "expert guidance",
     title: "Engineering Consulting",
@@ -9,6 +10,7 @@ export const ServicesContent = [
   },
   {
     id: 2,
+    link: "testing",
     image: "precisionTesting.jpeg",
     section: "precision testing",
     title: "Testing & Analysis",
@@ -17,6 +19,7 @@ export const ServicesContent = [
   },
   {
     id: 3,
+    link: "inspection",
     image: "assuredQuality.jpeg",
     section: "assured quality",
     title: "Inspection Services",
@@ -25,6 +28,7 @@ export const ServicesContent = [
   },
   {
     id: 4,
+    link: "training",
     image: "skilledTraining.jpeg",
     section: "skilled training",
     title: "Technical Training",

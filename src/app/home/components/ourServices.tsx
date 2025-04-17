@@ -26,24 +26,28 @@ export const OurServices = () => {
             image="serviceImageOne.jpeg"
             title="Engineering Consulting"
             description="Quality Engineering, Failure Prevention"
+            href="/services/#consulting"
           />
 
           <ServicesCard
             image="serviceImageTwo.jpeg"
             title="Testing & Analysis"
             description="Weld Procedure Qualification, Metallurgical & Mechanical Testing, Failure Analysis"
+            href="/services/#testing"
           />
 
           <ServicesCard
             image="serviceImageThree.jpeg"
             title="Inspection Services"
             description="Certified Welding Inspection (CWI), NDT (UT, MT, VT), Coating Inspection"
+            href="/services/#inspection"
           />
 
           <ServicesCard
             image="serviceImageFour.jpeg"
             title="Technical Training"
             description="CWI Training, Quality and Safety Workshops"
+            href="/services/#training"
           />
         </section>
       </div>

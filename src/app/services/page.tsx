@@ -18,6 +18,7 @@ export default function Services() {
           <ServiceCard
             key={service.title}
             index={index}
+            id={service.link}
             image={service.image}
             section={service.section}
             title={service.title}
