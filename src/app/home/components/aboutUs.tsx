@@ -10,7 +10,7 @@ export const AboutUs = () => {
       <section className="">
         <SectionHeading
           section="about us"
-          title="Experts in Welding & Inspection"
+          title="Experts in Welding & Quality Assurance"
           paragraph="At Kavod Engineering Services, our deep expertise in welding engineering, material science, and quality assurance empowers clients to deliver infrastructure that stands the test of time."
           className="items-center text-center"
           paragraphClassName="md:max-w-[85%] lg:max-w-[60%] xl:max-w-[40%]"
@@ -22,7 +22,7 @@ export const AboutUs = () => {
           <VisionMissionText
             image="missionImage.jpeg"
             title="Our Mission"
-            paragraph="To provide industry-leading inspection, testing, and consulting services that elevate safety, compliance, and performance, fostering long-term partnerships built on integrity and technical excellence."
+            paragraph="Our mission at Kavod Engineering Services is to deliver industry-leading quality assurance, inspection, and consulting services at an effective cost without compromising safety and regulatory compliance while fostering long-term partnerships with our clients by upholding the highest standards of integrity, professionalism, and technical expertise."
           />
         </div>
 
@@ -30,7 +30,7 @@ export const AboutUs = () => {
           <VisionMissionText
             image="visionImage.jpeg"
             title="Our Vision"
-            paragraph="To be the benchmark for quality assurance and materials consulting in structural and manufacturing industries, driving innovation, continuous improvement, and ethical engineering for a safer, more efficient built environment."
+            paragraph="To be a trusted leader in quality assurance and materials consulting through innovation, continuous improvement, and a commitment to ethical engineering practices ensuring safer, efficient, and high-quality built environment."
           />
         </div>
       </section>
