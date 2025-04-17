@@ -5,7 +5,7 @@ export const AboutUs = () => {
   return (
     <div
       id="about"
-      className="flex flex-col gap-10 xl:gap-14 py-10 px-5 md:py-16 md:px-10"
+      className="flex flex-col gap-10 xl:gap-14 py-10 px-5 md:py-16 md:px-10 scroll-mt-[100px]"
     >
       <section className="">
         <SectionHeading
