@@ -49,7 +49,7 @@ export default function ContactForm() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/consultations", {
+      const response = await fetch("/api/consultation", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
