@@ -21,6 +21,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { toast } from "sonner";
 
 import { contactSchema } from "@/schema/contact";
 import { CustomButton } from "@/components/shared/customButton";
@@ -48,13 +49,12 @@ export default function ContactForm() {
     setLoading(true);
 
     try {
-      // Sending the form data to the consultation API
-      const response = await fetch("/api/consultation", {
+      const response = await fetch("/api/consultations", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(values), // Send the form data
+        body: JSON.stringify(values),
       });
 
       const data = await response.json();
@@ -62,20 +62,19 @@ export default function ContactForm() {
       if (data.status === "success") {
         console.log("Service request successfully sent:", data.message);
 
-        // Show a success message or reset the form
         form.reset();
 
         sessionStorage.setItem("consultationSuccess", "true");
         router.replace("/contact/success");
       } else {
         console.error("Error submitting form:", data.message);
-        // Optionally show an error toast
-        alert(`Error: ${data.message}`);
+
+        toast(`Error: ${data.message}`);
       }
     } catch (error) {
       console.error("Unexpected error:", error);
-      // Optionally show an error toast
-      alert("An unexpected error occurred. Please try again.");
+
+      toast("An unexpected error occurred. Please try again.");
     } finally {
       setLoading(false);
     }

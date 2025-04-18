@@ -3,6 +3,7 @@ import "../styles/app.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { ContactBanner } from "@/components/layout/contactBanner";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Kavod Engineering",
@@ -26,6 +27,7 @@ export default function RootLayout({
         </header>
         {children}
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
