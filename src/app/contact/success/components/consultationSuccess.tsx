@@ -18,7 +18,7 @@ export const ConsultationSuccessComponent = ({
         </div>
 
         <p className="text-[14px] leading-4">
-          We've received your consultation request and a member of our team will
+          We have received your consultation request and a member of our team will
           respond to you very soon.
         </p>
         <div className="h-5"></div>
