@@ -2,8 +2,8 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    const secret = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_SECRET;
-    const baseUrl = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_CONSULTATION_URL;
+    const secret = process.env.CLIENT_KEY;
+    const baseUrl = process.env.CLIENT_URL;
 
     const { name, email, contactNumber, subject, message } = body;
 
