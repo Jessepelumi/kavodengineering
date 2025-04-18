@@ -10,6 +10,7 @@ interface CustomButtonProps {
   variant?: "primary" | "secondary";
   className?: string;
   onClick?: () => void;
+  type?: "button" | "submit" | "reset";
 }
 
 export const CustomButton = ({
@@ -18,6 +19,7 @@ export const CustomButton = ({
   variant = "primary",
   className,
   onClick,
+  type = "button",
 }: CustomButtonProps) => {
   const variantClasses = {
     primary:
@@ -47,7 +49,7 @@ export const CustomButton = ({
   }
 
   return (
-    <button className={buttonClasses} onClick={onClick}>
+    <button type={type} className={buttonClasses} onClick={onClick}>
       {content}
     </button>
   );
