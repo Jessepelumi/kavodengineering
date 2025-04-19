@@ -70,10 +70,10 @@ export const Footer = () => {
                 >
                   About us
                 </Link>
-                <Link href="/" className="hover:text-gray-600">
+                <Link href="/services" className="hover:text-gray-600">
                   Services
                 </Link>
-                <Link href="/" className="hover:text-gray-600">
+                <Link href="/contact" className="hover:text-gray-600">
                   Contact us
                 </Link>
               </nav>
