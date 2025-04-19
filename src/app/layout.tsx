@@ -6,14 +6,14 @@ import { ContactBanner } from "@/components/layout/contactBanner";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "Kavod Engineering",
-  description: "Kavod Engineering Services",
+  title: "Kavod Engineering Services",
+  description: "Kavod Engineering Services Website",
   icons: {
     icon: "/favicon.png",
   },
   openGraph: {
-    title: "Kavod Engineering",
-    description: "Kavod Engineering Services",
+    title: "Kavod Engineering Services",
+    description: "Kavod Engineering Services Website",
     images: [
       {
         url: "/favicon.png",
