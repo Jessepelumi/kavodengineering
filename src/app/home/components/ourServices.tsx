@@ -78,7 +78,7 @@ export const OurServices = () => {
             image="agreement.svg"
             imageClassName="w-[40px] h-[24px]"
             title="Precision & Reliability"
-            description="Data-driven insights you can count on—every time."
+            description="Data-driven insights you can count on every time."
           />
         </section>
       </div>
