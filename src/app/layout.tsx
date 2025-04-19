@@ -7,9 +7,25 @@ import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Kavod Engineering",
-  description: "Kavod Engineering Waitlist",
+  description: "Kavod Engineering Services",
   icons: {
     icon: "/favicon.png",
+  },
+  openGraph: {
+    title: "Kavod Engineering",
+    description: "Kavod Engineering Services",
+    images: [
+      {
+        url: "/favicon.png",
+        width: 512,
+        height: 512,
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/favicon.png"],
   },
 };
 
