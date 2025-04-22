@@ -28,7 +28,7 @@ export const VisionMissionText = ({
           {title}
         </div>
       </div>
-      <p className="text-justify">{paragraph}</p>
+      <p>{paragraph}</p>
     </section>
   );
 };
