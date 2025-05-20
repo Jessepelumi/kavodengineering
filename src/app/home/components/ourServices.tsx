@@ -37,7 +37,7 @@ export const OurServices = () => {
           />
 
           <ServicesCard
-            image="serviceImageThree.jpeg"
+            image="expertGuidance.jpeg"
             title="Inspection Services"
             description="Certified Welding Inspection (CWI), NDT (UT, MT, VT), Coating Inspection"
             href="/services/#inspection"
