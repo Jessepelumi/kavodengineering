@@ -39,9 +39,8 @@ export const Navbar = () => {
             src="/images/KESMainLogo.png"
             alt="Kavod Engineering Main Logo"
             width={128}
-            height={64}
+            height={0}
             priority
-            className="h-auto w-auto"
           />
         </Link>
 
@@ -176,7 +175,11 @@ export const MobileNavbar = ({ isOpen, closeMenu }: MobileNavbarProps) => {
         </nav>
       </div>
 
-      <CustomButton href="/contact" onClick={closeMenu} className="text-center py-3.5">
+      <CustomButton
+        href="/contact"
+        onClick={closeMenu}
+        className="text-center py-3.5"
+      >
         Get a consultation
       </CustomButton>
     </section>
